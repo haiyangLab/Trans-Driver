@@ -242,7 +242,7 @@ def fisher_ex(a, b, c, d):
     return p1
 
 
-def train():
+def trans_driver():
     model = TransModel(
         n_input=args.n_input,).to(device)
     model.transformer.train()
@@ -567,7 +567,7 @@ if __name__ == "__main__":
     cgc_path = r'../data/cgc.csv'
     args.n_input = 46
     dataset, _ = load_data(train_path)
-    train()
+    trans_driver()
 
     m_lr = args.lr
     m_ba = args.batch_size
