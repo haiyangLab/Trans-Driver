@@ -4,3 +4,5 @@ Trans-Driver, a deep supervised learning method, a multilayer perceptron convert
 Trans-Driver's dataset includes the model's training set, test set, and TCGA and CGC data, which you can find under ./data. Trans-Driver was evaluated using Fisher's test, and results for 33 cancers and comparison methods are in ./results. The Trans-Driver program includes model training and testing in ./program.
 
 Trans-Driver's model implementation is based on Pytorch. its dependency packages are: Python (3.7.10), PyTorch (1.8.1), NumPy (1.19.5), Pandas (1.2.4), Keras (2.4.3), Scipy(1.6.2). The operating system is windows10. The CPU is Intel Core i5-10400 (2.90 GHz), and the GPU is NVIDIA GeForce GTX 1650 Ti.
+# We can run the Trans-Driver model with the following command: 
+python program/Trans-Driver.py
