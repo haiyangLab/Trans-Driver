@@ -43,7 +43,7 @@ q1<-ggplot(data=databar, mapping=aes(x=factor(evaluate, level=sorted1_list),  y=
   scale_fill_manual(values =c("#CC0000", "#006600", "#669999", "#00CCCC"))+
   theme_bar1()
 
-databar1<-read.table('C:/Users/zhanglei/Desktop/论文材料/results_3/pancan_fea_imp_data.txt', header=T, sep='\t', encoding="UTF-8")
+databar1<-read.table('../results/pancan_fea_imp_data.txt', header=T, sep='\t', encoding="UTF-8")
 print(databar1)
 theme_bar2 <- function(..., bg='white'){
   require(grid)
@@ -85,7 +85,7 @@ q2<-ggplot(data=databar1, mapping=aes(x=factor(Features	, level=sorted2_list), y
   scale_fill_manual(values =c("#CC0000", "#006600", "#669999", "#00CCCC"))+
   theme_bar2()
 
-databar3<-read.table('C:/Users/zhanglei/Desktop/论文材料/results_3/each_cancer_fea_3_4.txt', header=T, sep='\t', encoding="UTF-8")
+databar3<-read.table('../results/each_cancer_fea_1.txt', header=T, sep='\t', encoding="UTF-8")
 print(databar3)
 theme_bar3 <- function(..., bg='white'){
   require(grid)
