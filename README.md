@@ -12,7 +12,7 @@ python ./program/Trans-Driver.py
 python ./program/performance.py
 ```
 ## The result analysis module of Trans-Driver is used as follows:
-```R
+```Bash
 ./program/analysis.R  ./program/evaluation.R  ./program/fea_imports.R
 ```
 Trans-Driver's model implementation is based on Pytorch. its dependency packages are: Python (3.7.10), PyTorch (1.8.1), NumPy (1.19.5), Pandas (1.2.4), Keras (2.4.3), Scipy(1.6.2). The operating system is windows10. The CPU is Intel Core i5-10400 (2.90 GHz), and the GPU is NVIDIA GeForce GTX 1650 Ti.
