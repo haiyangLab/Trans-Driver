@@ -38,4 +38,4 @@ q2<-ggplot(data=databar1, mapping=aes(x = Cancer, y = Importance,fill=Features))
     coord_cartesian(ylim=c(0,0.75))+
     scale_y_continuous(expand = c(0, 0))
 q2
-#theme函数设置
+
