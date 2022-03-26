@@ -40,7 +40,6 @@ q1<-ggplot(data=databar, mapping=aes(x=factor(Dataset),  y=Fisher_value, fill=Me
   scale_fill_manual(values =c("#CC0000", "#006600", "#669999", "#00CCCC", "#660099", "#CC0066", "#FF9999", "#FF9900"))+
   theme_bar()
 
-
 databar2<-read.table('../results/differ_methods_con.txt', header=T, sep='\t', encoding="UTF-8")
 print(databar2)
 theme_bar2 <- function(..., bg='white'){
@@ -84,8 +83,6 @@ q2<-ggplot(data=databar2, mapping=aes(x = factor(Methods, level = sorted1_list),
   coord_cartesian(ylim=c(0,1))+
   scale_y_continuous(expand = c(0, 0))
 
-
-
 theme_bar3 <- function(..., bg='white'){
   require(grid)
   theme_classic(...) +
@@ -113,9 +110,7 @@ theme_bar3 <- function(..., bg='white'){
           #legend.margin=margin(0,0,-7,0),
           #legend.box.margin =margin(-10,0,0,0)
     )
-  
 }
-
 
 sorted2_list <- c('ActiveDriver', 'e-Driver','CHASM',  'CompositeDriver', 'OncodriveCLUST' ,'MuSiC', '2020plus', 'Trans-Driver')
 
@@ -127,7 +122,6 @@ q3 <- ggplot(csdn_box, aes(x = factor(Methods, level = sorted2_list), y = P_valu
   theme_bar3() +
   #scale_y_continuous(expand = c(0, 0))+
   coord_flip()
-
 
 q1 <- q1 + ggtitle('A')
 q2 <- q2 + ggtitle('B')
