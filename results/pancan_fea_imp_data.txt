@@ -1,0 +1,7 @@
+Features	Importance	Cancer
+mutations	0.422937367	Pancancer
+other	0.310749385	Pancancer
+cnv	0.105814277	Pancancer
+exp	0.089952803	Pancancer
+dna_meth	0.070546169	Pancancer
+
