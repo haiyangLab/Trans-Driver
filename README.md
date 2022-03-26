@@ -9,7 +9,7 @@ python ./program/Trans-Driver.py
 ```
 ## Trans-Driver's performance comparison module is used as follows: 
 ```Python
-python ./program/evaluation.py
+python ./program/performance.py
 ```
 
 
