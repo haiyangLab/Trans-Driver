@@ -11,7 +11,7 @@ python ./program/Trans-Driver.py
 ```Python
 python ./program/performance.py
 ```
-## The result analysis module of Trans-Driver is used as follows:
+## The results analysis module of Trans-Driver is used as follows:
 ```Bash
 ./program/analysis.R  
 ./program/evaluations.R  
