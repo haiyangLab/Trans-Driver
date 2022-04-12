@@ -189,8 +189,9 @@ def plot_cgc_and_tcga_fisher():
                 df_20 = df_20_1.loc[df_20_1['qvalue'] < q]
                 df_20 = df_20.drop_duplicates(['gene'])
                 df_20 = df_20['gene']
-                df_20_list = df_20.values.tolist()
-                con_cgc = [item for item in df_20_list if item in cgc_data]
+                con_cgc = df_20.values.tolist()
+                con = [item for item in con_cgc if item in cgc_data]
+                # con_cgc = [item for item in df_20_list if item in cgc_data]
 
                 remain_pr_data = df_20_1.loc[df_20_1['qvalue'] >= q]
                 remain_pr_data = remain_pr_data.drop_duplicates(['gene'])
@@ -200,13 +201,16 @@ def plot_cgc_and_tcga_fisher():
                 fisher_tcga = tcga_fisher(con_cgc, remain_pr_hg, tcga_data, df_20)
                 fish_res['2020plus'] = fisher_cgc
                 tcga_fish_res['2020plus'] = fisher_tcga
+                # print('CGC fisher = {}'.format(fisher_cgc))
+                # print('TCGA fisher = {}'.format(fisher_tcga))
+                # print(len(con_cgc))
                 df = df_20
-                d['2020plus'] = len(con_cgc)
-                num_signif_dict['2020plus'] = len(df_20_list)
+                d['2020plus'] = len(con)
+                num_signif_dict['2020plus'] = len(con_cgc)
                 new = pd.DataFrame({'methods': '2020plus',
                                     '# CGC': len(con_cgc),
-                                    '# significant': len(df_20_list),
-                                    'Fraction overlap w/ CGC': len(con_cgc) / len(df_20_list)}, index=[len(df_pr)])
+                                    '# significant': len(con_cgc),
+                                    'Fraction overlap w/ CGC': len(con) / len(con_cgc)}, index=[len(df_pr)])
                 df_pr = df_pr.append(new, ignore_index=True)
 
             elif file == 'CompositeDriver':
