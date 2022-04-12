@@ -705,8 +705,8 @@ def multi_2_monoomics():
 
 if __name__ == '__main__':
     plot_cgc_and_tcga_fisher()
-    # plot_con_with_method()
-    # multi_2_monoomics()
+    plot_con_with_method()
+    multi_2_monoomics()
 
 
 
