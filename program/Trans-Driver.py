@@ -144,7 +144,6 @@ class Transformer(nn.Module):
         self.attn1 = MultiHeadSelfAttention(dim_in=self.n, dim_k=4, dim_v=8)
         self.fc5 = nn.Linear(8, 2)
         self.drop1 = nn.Dropout(0.08)
-        self.cnn = nn.Conv1d(in_channels=n_input, out_channels=self.n, kernel_size=(1,))
 
     def encoder(self, x):
         x1 = self.fc1(x)
