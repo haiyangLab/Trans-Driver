@@ -16,15 +16,15 @@ python ./program/Trans-Driver.py --lr 0.00089 --batch_size 16 --epoch 30
 ```
 You can then obtain the AUC and PR curves of Trans-Driver and the other comparison algorithms on the TCGA, CGC, and PCAWG datasets, as well as the enrichment analysis results comparing Trans-Driver with other methods on the TCGA and CGC datasets.
 
-## To obtain the enrichment analysis results of Trans-Driver on the PCAWG dataset, please run the following script:
+### Enrichment Analysis on PCAWG:
 ```Python
 python ./program/performance.py
 ```
 
-## The results analysis module of Trans-Driver is used as follows:
+## Omics Contribution Analysis:
 ```Bash
-./program/analysis.R  
-./program/evaluations.R  
-./program/fea_imports.R
+./program/contribution  
 ```
+The relative contributions of each omics modality were calculated and are available for both the TCGA pan-cancer dataset and each of the 33 individual cancer types.
+
 Trans-Driver's model implementation is based on Pytorch. its dependency packages are: Python (3.7.10), PyTorch (1.8.1), NumPy (1.19.5), Pandas (1.2.4), Keras (2.4.3), Scipy(1.6.2). The operating system is windows10. The CPU is an Intel Xeon Platinum 8255C (2.50 GHz), and the GPU is NVIDIA GeForce RTX 3090.
