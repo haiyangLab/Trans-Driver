@@ -1,12 +1,24 @@
 # Trans-Driver
-Trans-Driver, a deep supervised learning method, a multilayer perceptron converter network with an unbalanced loss function, which integrates multi-omics data to learn the differences and associations between different omics data for cancer drivers’ discovery. Compared with other state-of-the-art driver gene identification methods, Trans-Driver has achieved excellent performance on TCGA and CGC data sets. Among ~20,000 protein-coding genes, Trans-Driver reported 269 candidate driver genes, of which 132 genes (about 49%) were included in the gold standard CGC data set. Finally, we analyzed the contribution of each feature to the identification of driver genes. We found that the integration of multi-omics data can improve the performance of our method compared with using only somatic mutation data. Through detailed analysis, we found that the candidate drivers are clinically meaningful, proving the practicability of Trans-Driver.
+Trans-Driver is a deep supervised learning framework utilizing a multilayer perceptron converter network with an unbalanced loss function. It integrates multi-omics data to learn both the differences and associations among diverse omics types for the identification of cancer driver genes. Compared with other state-of-the-art driver gene identification methods, Trans-Driver achieves excellent performance on benchmark datasets such as TCGA and CGC.Among ~20,000 protein-coding genes, Trans-Driver reported 269 candidate driver genes, of which 132 (about 49%) are present in the gold-standard CGC dataset. Further feature analysis demonstrated that integrating multi-omics data significantly improves predictive performance compared to using only somatic mutation data, and many identified candidates are clinically meaningful, confirming the practical utility of Trans-Driver.
 
-Trans-Driver's dataset includes the model's training set, test set, and TCGA and CGC data, which you can find under ./data. Trans-Driver was evaluated using Fisher's test, and results for 33 cancers and comparison methods are in ./results. The Trans-Driver program includes model training and testing in ./program.
+Trans-Driver's dataset includes the model's training set, test set, and TCGA, CGC and PCAWG data, which you can find under ./data. Trans-Driver was evaluated using Fisher's test, and results for 33 cancers and comparison methods are in ./results. The Trans-Driver program includes model training and testing in ./program.
 
 ## We can run the Trans-Driver model with the following command: 
 ```Python
-python ./program/Trans-Driver.py
+python ./program/Trans-Driver.py [--lr LEARNING_RATE] [--batch_size BATCH_SIZE] [--epoch EPOCHS] [--alpha ALPHA] [--gamma GAMMA]
 ```
+Parameters:
+
+--lr Learning rate (default: 0.00089)
+
+--batch_size Batch size (default: 16)
+
+--epoch Number of epochs (default: 30)
+
+--alpha Focal loss alpha parameter (default: 0.3)
+
+--gamma Focal loss gamma parameter (default: 1.9)
+
 ## Trans-Driver's performance comparison module is used as follows: 
 ```Python
 python ./program/performance.py
