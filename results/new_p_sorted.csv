@@ -1,0 +1,22 @@
+fea,num
+pnum,33
+INS,31
+non-silent to silent,30
+gene_degree,30
+gene_betweeness,29
+Frame_Shift_Ins,27
+DEL,25
+SNP,24
+Frame_Shift_Del,22
+recurrent missense,13
+In_Frame_Ins,13
+frameshift indel,12
+missense to silent,12
+Nonsense_Mutation,9
+Missense_Mutation,9
+inframe indel,3
+entropy p-value,3
+inactivating p-value,2
+Splice_Site,1
+gene length,1
+In_Frame_Del,1
