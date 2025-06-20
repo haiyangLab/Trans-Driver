@@ -14,6 +14,8 @@ You can adjust the training process of Trans-Driver using several command-line a
 ```Python
 python ./program/Trans-Driver.py --lr 0.00089 --batch_size 16 --epoch 30
 ```
+You can then obtain the AUC and PR curves of Trans-Driver and the other comparison algorithms on the TCGA, CGC, and PCAWG datasets, as well as the enrichment analysis results comparing Trans-Driver with other methods on the TCGA and CGC datasets.
+
 ## Trans-Driver's performance comparison module is used as follows: 
 ```Python
 python ./program/performance.py
