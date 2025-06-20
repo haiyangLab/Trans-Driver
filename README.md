@@ -17,4 +17,4 @@ python ./program/performance.py
 ./program/evaluations.R  
 ./program/fea_imports.R
 ```
-Trans-Driver's model implementation is based on Pytorch. its dependency packages are: Python (3.7.10), PyTorch (1.8.1), NumPy (1.19.5), Pandas (1.2.4), Keras (2.4.3), Scipy(1.6.2). The operating system is windows10. The CPU is Intel Core i5-10400 (2.90 GHz), and the GPU is NVIDIA GeForce GTX 1650 Ti.
+Trans-Driver's model implementation is based on Pytorch. its dependency packages are: Python (3.7.10), PyTorch (1.8.1), NumPy (1.19.5), Pandas (1.2.4), Keras (2.4.3), Scipy(1.6.2). The operating system is windows10. The CPU is an Intel Xeon Platinum 8255C (2.50 GHz), and the GPU is NVIDIA GeForce RTX 3090.
