@@ -28,6 +28,10 @@ python ./program/contribution.py
 ```
 The relative contributions of each omics modality were calculated and are available for both the TCGA pan-cancer dataset and each of the 33 individual cancer types.
 
-## Omics Contribution Analysis:
+## Performance of MLP on TCGA, CGC, and PCAWG Datasets:
+```Bash
+python ./program/mlp.py
+```
+The script generates both receiver operating characteristic (ROC) and precision-recall (PR) curves for the Multilayer Perceptron (MLP) model on the TCGA, CGC, and PCAWG datasets. 
 
 Trans-Driver's model implementation is based on Pytorch. its dependency packages are: Python (3.7.10), PyTorch (1.8.1), NumPy (1.19.5), Pandas (1.2.4), Keras (2.4.3), Scipy(1.6.2). The operating system is windows10. The CPU is an Intel Xeon Platinum 8255C (2.50 GHz), and the GPU is NVIDIA GeForce RTX 3090.
