@@ -7,9 +7,8 @@ Trans-Driver's dataset includes the model's training set, test set, and TCGA, CG
 ```Python
 python ./program/Trans-Driver.py [--lr LEARNING_RATE] [--batch_size BATCH_SIZE] [--epoch EPOCHS] [--alpha ALPHA] [--gamma GAMMA]
 ```
-Parameters:
 You can adjust the training process of Trans-Driver using several command-line arguments: --lr sets the learning rate, --batch_size specifies the number of samples per batch, --epoch controls the number of training epochs, --alpha defines the alpha parameter for the focal loss function (to balance class weights), and --gamma sets the gamma parameter for the focal loss (to focus learning on hard-to-classify samples). These options allow flexible tuning of model training according to your needs.
-Example:
+###Example:
 ```Python
 python ./program/Trans-Driver.py --lr 0.00089 --batch_size 16 --epoch 30
 ```
