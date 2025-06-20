@@ -20,6 +20,8 @@ You can then obtain the AUC and PR curves of Trans-Driver and the other comparis
 ```Python
 python ./program/performance.py
 ```
+You can obtain the enrichment analysis results of driver genes on the PCAWG dataset.
+
 ## The results analysis module of Trans-Driver is used as follows:
 ```Bash
 ./program/analysis.R  
