@@ -16,11 +16,10 @@ python ./program/Trans-Driver.py --lr 0.00089 --batch_size 16 --epoch 30
 ```
 You can then obtain the AUC and PR curves of Trans-Driver and the other comparison algorithms on the TCGA, CGC, and PCAWG datasets, as well as the enrichment analysis results comparing Trans-Driver with other methods on the TCGA and CGC datasets.
 
-## Trans-Driver's performance comparison module is used as follows: 
+## To obtain the enrichment analysis results of Trans-Driver on the PCAWG dataset, please run the following script:
 ```Python
 python ./program/performance.py
 ```
-You can obtain the enrichment analysis results of driver genes on the PCAWG dataset.
 
 ## The results analysis module of Trans-Driver is used as follows:
 ```Bash
